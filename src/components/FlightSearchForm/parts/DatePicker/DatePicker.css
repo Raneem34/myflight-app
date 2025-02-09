@@ -1,0 +1,39 @@
+/* Date picker */
+.DateRangePicker,
+.SingleDatePicker {
+  display: flex;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 100%;
+  margin-top: 10px;
+}
+.DateRangePickerInput,
+.SingleDatePickerInput {
+  border: 0px;
+  display: flex;
+  padding-right: 10px;
+}
+.DateRangePickerInput__focused,
+.SingleDatePickerInput__focused {
+  border-color: #007bff;
+  background-color: #f0f8ff;
+}
+.DateRangePickerInput_arrow,
+.SingleDatePickerInput_arrow {
+  opacity: 0;
+}
+.DateInput {
+  margin-right: 10px;
+}
+
+.DateInput_input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.3s ease-in-out;
+  background-color: white;
+  height: 34px;
+  color: #363333;
+}

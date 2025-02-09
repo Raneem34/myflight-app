@@ -1,0 +1,18 @@
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  background-image: url("/images/background1.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  display: flex;
+  place-items: flex-start; /*moving the body to the top of the page*/
+  min-width: 320px;
+  min-height: 100vh;
+  padding-top: 20px; /* Add this line to create space at the top */
+}
