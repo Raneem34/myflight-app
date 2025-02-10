@@ -113,10 +113,4 @@ Ensure you have the following installed:
 ├── main.jsx
 ```
 
-## Loom Video Demo
-
-[📹 Watch the Demo](#) _(Replace with actual Loom link)_
-
----
-
 For any questions, feel free to reach out.
