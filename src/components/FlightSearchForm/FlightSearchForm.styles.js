@@ -19,21 +19,18 @@ export const SearchForm = styled.form`
 
 export const FormFields = styled.div` 
   display: flex;
-  align-items: center; /* Align items horizontally */
+  align-items: center; 
   width: 100%;
   gap: 5px;
   padding-bottom:5px;
 
-  /* Default flex-wrap setting */
   flex-wrap: wrap;
 
-  /* Media query for screen size larger than 600px */
   @media (min-width: 600px) {
     flex-wrap: nowrap;
   }
  `;
 
-/* Swap Button */
 export const SwapButton = styled.button`
   width: 40px;
   height: 40px;

@@ -12,12 +12,10 @@ const dropdownFade = keyframes`
   }
 `;
 
-// Dropdown Container
 export const PassengerDropdownContainer = styled.div`
   position: relative;
 `;
 
-// Toggle Button
 export const PassengerToggleButton = styled.button`
   height: 50px;
   display: flex;
@@ -39,7 +37,6 @@ export const PassengerToggleButton = styled.button`
   }
 `;
 
-// Dropdown Menu
 export const PassengerDropdownMenu = styled.div`
   position: absolute;
   width: 220px;
@@ -94,7 +91,6 @@ export const PassengerButton = styled.button`
   }
 `;
 
-// Done Button
 export const PassengerDoneButton = styled.button`
   margin-top: 12px;
   padding: 12px 20px;

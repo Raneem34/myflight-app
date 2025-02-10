@@ -20,7 +20,6 @@ const calculateLayover = (prevArrival, nextDeparture) => {
   return `${Math.floor(diffMinutes / 60)} hrs ${diffMinutes % 60} min`;
 };
 
-// FlightSegment component (for each flight segment)
 const FlightSegment = ({ segment, nextSegment }) => {
   const {
     origin,
@@ -75,7 +74,7 @@ const FlightSegment = ({ segment, nextSegment }) => {
   );
 };
 
-// FlightLeg component (for each flight leg) loop
+// FlightLeg component (for each flight leg) 
 const FlightLeg = ({ leg, legIndex, isOneWayFlight }) => (
   <SegmentContainer isOneWayFlight={isOneWayFlight}>
     {!isOneWayFlight && <SegmentTitle>Flight {legIndex + 1}</SegmentTitle>}

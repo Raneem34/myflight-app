@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Repeat } from "lucide-react"; // Importing the swap icon
+import { Repeat } from "lucide-react"; 
 import useGeolocation from "../../hooks/useGeolocation";
 import { getNearByAirports } from "../../api/getNearByAirports";
 import AirportInput from "./parts/AirportInput/AirportInput";
@@ -16,7 +16,6 @@ import {
 const FlightSearchForm = ({ onSearch }) => {
   const { location } = useGeolocation();
 
-  // State for form fields
   const [formData, setFormData] = useState({
     origin: "",
     destination: "",
@@ -35,7 +34,6 @@ const FlightSearchForm = ({ onSearch }) => {
       .catch((err) => console.error("Error fetching airports:", err));
   }, [location]);
 
-  // Handle input changes
   const updateField = (field, value) => {
     setFormData((prev) => {
       console.log({ ...prev, [field]: value }, "updateField");
@@ -100,7 +98,6 @@ const FlightSearchForm = ({ onSearch }) => {
           placeholder="Origin"
         />
 
-        {/* Swap button between inputs */}
         <SwapButton type="button" onClick={handleSwap}>
           <Repeat size={20} />
         </SwapButton>

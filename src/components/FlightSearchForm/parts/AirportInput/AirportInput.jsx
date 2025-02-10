@@ -17,7 +17,6 @@ const AirportInput = ({ placeholder, value, setInputVal }) => {
   const inputRef = useRef(null);
   const suggestionsRef = useRef(null);
 
-  // Memoized debounced API function
   const handleSearchAPI = useCallback(
     debounce(async (query) => {
       try {
@@ -31,7 +30,6 @@ const AirportInput = ({ placeholder, value, setInputVal }) => {
     []
   );
 
-  // Click outside handler to close suggestions
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (
@@ -46,16 +44,15 @@ const AirportInput = ({ placeholder, value, setInputVal }) => {
     return () => document.removeEventListener("click", handleClickOutside);
   }, []);
 
-  // Handle suggestion selection
   const handleSelect = (airport) => {
-    setSearchQuery(null); // Reset input field
+    setSearchQuery(null); 
     setInputVal(airport);
     setShowSuggestions(false);
   };
 
   const handleSearch = (query) => {
-    setSearchQuery(query); // Update state immediately
-    handleSearchAPI(query); // Call debounced API function
+    setSearchQuery(query); 
+    handleSearchAPI(query); 
   };
 
 

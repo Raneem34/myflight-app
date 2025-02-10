@@ -11,8 +11,8 @@ body {
   background-position: center;
   margin: 0;
   display: flex;
-  place-items: flex-start; /*moving the body to the top of the page*/
+  place-items: flex-start; 
   min-width: 320px;
   min-height: 100vh;
-  padding-top: 20px; /* Add this line to create space at the top */
+  padding-top: 20px; 
 }

@@ -28,13 +28,12 @@ export const InputField = styled.input`
   font-size: 16px;
   width: 100%;
   height: 100%;
-  /* For focus state */
+
   &:focus {
     border-color: #007bff;
     box-shadow: 0 0 6px rgba(0, 123, 255, 0.2);
   }
 
-  /* Optional: Add style for placeholder */
   &::placeholder {
     color: #888;
   }

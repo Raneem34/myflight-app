@@ -15,7 +15,6 @@ export const fetchFlights = async (
     "https://sky-scrapper.p.rapidapi.com/api/v2/flights/searchFlights"
   );
 
-  // Define parameters
   const params = {
     originSkyId,
     destinationSkyId,
@@ -33,12 +32,12 @@ export const fetchFlights = async (
     market: "en-US",
     countryCode: "US",
   };
-  // Remove null or undefined values
+
   Object.keys(params).forEach((key) => {
-    if (params[key] == null) delete params[key]; // Removes both null & undefined
+    if (params[key] == null) delete params[key]; 
   });
 
-  // Set URL parameters
+
   url.search = new URLSearchParams(params).toString();
 
   const options = {

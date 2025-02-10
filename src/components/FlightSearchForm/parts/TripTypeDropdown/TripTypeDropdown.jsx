@@ -11,7 +11,6 @@ const TripTypeDropdown = ({ selectedType, setSelectedType }) => {
   const [open, setOpen] = useState(false);
   const dropdownRef = useRef(null);
 
-  // Handle outside click
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -22,7 +21,6 @@ const TripTypeDropdown = ({ selectedType, setSelectedType }) => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  // Handle selection
   const handleSelect = (option) => {
     setSelectedType(option);
     setOpen(false);
